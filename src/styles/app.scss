@@ -1,0 +1,45 @@
+@import 'utils/variables';
+@import 'components/type';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    &__logo {
+        width: 150px;
+        height: auto;
+    }
+    &__burger {
+        display: flex;
+        flex-direction: column;
+        height: 36px;
+        justify-content: space-evenly;
+    }
+    &__burger div {
+        width: 36px;
+        height: 5px;
+        background-color: #D6DDD7;
+    }
+}
+
+.hero {
+    height: 100vh;
+}
+
+.hero video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
