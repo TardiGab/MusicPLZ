@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #270202;
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -42,4 +46,19 @@
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+}
+
+.members {
+    height: 100vh;
+    position: relative;
+    &__picture {
+        display: block;
+        margin: auto;
+        top: 0;
+        left: 50%;
+        position: absolute;
+        opacity: 0;
+        height: 100%;
+        transform: translateX(-50%);
+    }
 }
